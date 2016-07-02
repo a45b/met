@@ -1,0 +1,29 @@
+{
+  "name": "Met",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "A meteorological app",
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "scripts/chromereload.js",
+      "scripts/background.js"
+    ]
+  },
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  },
+  "permissions": [
+    "http://*/*",
+    "https://*/*",
+    "background",
+    "cookies",
+    "*://*.google.com/",
+    "geolocation",
+    "tabs"
+  ]
+}
