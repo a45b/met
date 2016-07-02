@@ -1,4 +1,4 @@
-var gCity; 
+var gCity = 'Banglore'; 
 window.onload = getLocation;
 
 // refresh result in every hour 
@@ -7,7 +7,7 @@ setInterval(function(){
 		searchByCity();
 	}
 	getLocation();
-}, 600000);
+}, 3600000);
 
 // get lat long
 function getLocation() {
@@ -38,9 +38,8 @@ function searchByLatLong(position) {
 function searchByCity(){
     var city = document.getElementById('city').value;
 	if(city.length == 0){
-		city = 'Banglore';
-	}
-	gCity = city;    	
+		city = gCity;
+	} 	
 	//var url = 'http://api.openweathermap.org/data/2.5/find?q='+city+'&cnt=1&appid=2a4232ec0f2f82a8f8a10600a21b9481&units=metric';
 	var url = 'https://met-iamkdev.rhcloud.com/find/'+city;
 	getData(url);

@@ -1,3 +1,6 @@
+# met
+A meteorological app (chrome extension).
+
 # API for Met (chrome extension)
 entry for - http://www.venturesity.com/challenge/id/264
 api-server - https://met-iamkdev.rhcloud.com/ (Not actually needed but I created as the challenge mention about it. Also it protect the api key.) *powered by PHP and Silex*
